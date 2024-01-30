@@ -1,61 +1,53 @@
 # Weather App
 
-A simple weather application built using HTML, CSS, and JavaScript.
+This Weather App is a simple web application created using HTML, CSS, and JavaScript. It allows users to check the current weather conditions for a specific location, including temperature, humidity, wind speed, and more.
 
-## Description
+## Table of Contents
 
-This weather app allows users to check the current weather conditions for a specific location. It retrieves weather data from a third-party API.
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Used](#api-used)
+- [Contributing](#contributing)
 
-- Display current weather conditions (e.g., temperature, humidity, wind speed).
-- Search for weather by location (city or zip code).
+
+## Features
+
+- Current weather display: Shows the current weather conditions for a specified location.
+- Temperature units: Allows users to switch between Celsius and Fahrenheit units.
+- Location search: Users can search for a specific location to check its weather.
+- Responsive design: The app is designed to be responsive and work well on different screen sizes.
+
+## Demo
+
+A live demo of the Weather App can be accessed [here](https://65b7ba44e0090e07109ed0f7--luminous-arithmetic-24a518.netlify.app/).
 
 ## Installation
 
-1. Clone the repository:
+To run the Weather App locally, follow these steps:
 
-    ```bash
-    $ git clone https://github.com/itsmesanjana/weather-app.git
-    ```
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Open the `index.html` file in your web browser.
 
-2. Navigate to the project directory:
-
-    ```bash
-    $ cd weather-app
-    ```
-
-3. Open `index.html` in your preferred web browser.
+Alternatively, you can use a local development server such as [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code to run the project.
 
 ## Usage
 
-1. Enter a location (city or zip code) in the search bar.
+Once the Weather App is running, follow these steps to check the weather:
+
+1. Enter a location in the search bar.
 2. Press the "Search" button or hit Enter.
 3. The current weather conditions for the specified location will be displayed.
 
-## Technologies Used
+You can also switch between Celsius and Fahrenheit units by clicking on the respective buttons.
 
-- HTML
-- CSS
-- JavaScript
-- [Third-party Weather API]( 'https://api.openweathermap.org/data/2.5/weather';
-) - API used to fetch weather data.
+## API Used
 
-## Screenshots
- screenshots of the weather app in action.
-![image](https://github.com/itsmesanjana/Weather-App/assets/105939673/9818b346-ed98-493b-bf76-4b2a0a18dee2)
+This Weather App utilizes the [OpenWeatherMap API]('https://api.openweathermap.org/data/2.5/weather') to fetch weather data for different locations.
 
+To use the OpenWeatherMap API, you need to sign up for an API key and replace the placeholder in the `scripts/weather.js` file with your actual API key.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/add-new-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/add-new-feature`).
-6. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+```javascript
+const apiKey = '6b471c16bf715fd4155162d2a3272bad';
